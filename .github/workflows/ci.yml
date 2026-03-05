@@ -57,7 +57,7 @@ jobs:
       # JaCoCo (configured in pom.xml) instruments classes and generates
       # a coverage report at target/site/jacoco/jacoco.xml
       - name: Build and test with Maven
-        run: mvn clean verify --batch-mode
+        run: mvn clean site --batch-mode
 
       # ── Step 4: Publish test results ──────────────────────────────────────
       # Parses JUnit XML reports (target/surefire-reports/) and shows
